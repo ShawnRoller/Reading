@@ -13,6 +13,14 @@
 		1F08ED912B8EBF77000F91C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F08ED902B8EBF77000F91C5 /* Assets.xcassets */; };
 		1F08ED942B8EBF77000F91C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F08ED932B8EBF77000F91C5 /* Preview Assets.xcassets */; };
 		1F08ED9F2B8EBF77000F91C5 /* ReadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F08ED9E2B8EBF77000F91C5 /* ReadingTests.swift */; };
+		1F08EDAA2B8EC0E1000F91C5 /* TestAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F08EDA92B8EC0E1000F91C5 /* TestAssets.swift */; };
+		1F08EDAB2B8EC0E1000F91C5 /* TestAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F08EDA92B8EC0E1000F91C5 /* TestAssets.swift */; };
+		1F08EDAE2B8EC250000F91C5 /* StraightText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F08EDAD2B8EC250000F91C5 /* StraightText.swift */; };
+		1F08EDAF2B8EC250000F91C5 /* StraightText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F08EDAD2B8EC250000F91C5 /* StraightText.swift */; };
+		1F08EDB12B8EC284000F91C5 /* VerticalScrollingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F08EDB02B8EC284000F91C5 /* VerticalScrollingText.swift */; };
+		1F08EDB42B8EC832000F91C5 /* FocusVerticalScrollingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F08EDB32B8EC832000F91C5 /* FocusVerticalScrollingText.swift */; };
+		1F08EDB52B8EC832000F91C5 /* FocusVerticalScrollingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F08EDB32B8EC832000F91C5 /* FocusVerticalScrollingText.swift */; };
+		1F08EDB82B8ED8AA000F91C5 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = 1F08EDB72B8ED8AA000F91C5 /* SwiftUIIntrospect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,10 @@
 		1F08ED952B8EBF77000F91C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F08ED9A2B8EBF77000F91C5 /* ReadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F08ED9E2B8EBF77000F91C5 /* ReadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingTests.swift; sourceTree = "<group>"; };
+		1F08EDA92B8EC0E1000F91C5 /* TestAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAssets.swift; sourceTree = "<group>"; };
+		1F08EDAD2B8EC250000F91C5 /* StraightText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraightText.swift; sourceTree = "<group>"; };
+		1F08EDB02B8EC284000F91C5 /* VerticalScrollingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalScrollingText.swift; sourceTree = "<group>"; };
+		1F08EDB32B8EC832000F91C5 /* FocusVerticalScrollingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusVerticalScrollingText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F08ED8B2B8EBF76000F91C5 /* RealityKitContent in Frameworks */,
+				1F08EDB82B8ED8AA000F91C5 /* SwiftUIIntrospect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,8 @@
 		1F08ED872B8EBF76000F91C5 /* Reading */ = {
 			isa = PBXGroup;
 			children = (
+				1F08EDAC2B8EC23B000F91C5 /* Views */,
+				1F08EDA82B8EC0A7000F91C5 /* Data */,
 				1F08ED8C2B8EBF76000F91C5 /* ReadingApp.swift */,
 				1F08ED8E2B8EBF76000F91C5 /* ContentView.swift */,
 				1F08ED902B8EBF77000F91C5 /* Assets.xcassets */,
@@ -111,6 +126,24 @@
 			path = ReadingTests;
 			sourceTree = "<group>";
 		};
+		1F08EDA82B8EC0A7000F91C5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1F08EDA92B8EC0E1000F91C5 /* TestAssets.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1F08EDAC2B8EC23B000F91C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F08EDAD2B8EC250000F91C5 /* StraightText.swift */,
+				1F08EDB02B8EC284000F91C5 /* VerticalScrollingText.swift */,
+				1F08EDB32B8EC832000F91C5 /* FocusVerticalScrollingText.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,6 +162,7 @@
 			name = Reading;
 			packageProductDependencies = (
 				1F08ED8A2B8EBF76000F91C5 /* RealityKitContent */,
+				1F08EDB72B8ED8AA000F91C5 /* SwiftUIIntrospect */,
 			);
 			productName = Reading;
 			productReference = 1F08ED852B8EBF76000F91C5 /* Reading.app */;
@@ -180,6 +214,9 @@
 				Base,
 			);
 			mainGroup = 1F08ED7C2B8EBF76000F91C5;
+			packageReferences = (
+				1F08EDB62B8ED8AA000F91C5 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = 1F08ED862B8EBF76000F91C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -214,8 +251,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F08EDAE2B8EC250000F91C5 /* StraightText.swift in Sources */,
 				1F08ED8F2B8EBF76000F91C5 /* ContentView.swift in Sources */,
+				1F08EDB42B8EC832000F91C5 /* FocusVerticalScrollingText.swift in Sources */,
+				1F08EDAA2B8EC0E1000F91C5 /* TestAssets.swift in Sources */,
 				1F08ED8D2B8EBF76000F91C5 /* ReadingApp.swift in Sources */,
+				1F08EDB12B8EC284000F91C5 /* VerticalScrollingText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F08EDAB2B8EC0E1000F91C5 /* TestAssets.swift in Sources */,
 				1F08ED9F2B8EBF77000F91C5 /* ReadingTests.swift in Sources */,
+				1F08EDB52B8EC832000F91C5 /* FocusVerticalScrollingText.swift in Sources */,
+				1F08EDAF2B8EC250000F91C5 /* StraightText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,10 +527,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		1F08EDB62B8ED8AA000F91C5 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		1F08ED8A2B8EBF76000F91C5 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
+		};
+		1F08EDB72B8ED8AA000F91C5 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F08EDB62B8ED8AA000F91C5 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = SwiftUIIntrospect;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

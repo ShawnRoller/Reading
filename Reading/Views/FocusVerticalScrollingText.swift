@@ -26,6 +26,9 @@ struct FocusVerticalScrollingText: View {
                     proxy.scrollTo(splitText.last)
                 }
             }
+            .onHover { hover in
+                print("hovering on button \(hover)")
+            }
             ScrollView {
                 ForEach(splitText) { t in
                     Text("\(t)\n\n")
@@ -34,7 +37,7 @@ struct FocusVerticalScrollingText: View {
                         .onHover { isHovering in
                             print("hovering over \(String(t.prefix(5)))")
                             if (isHovering) {
-                                withAnimation(.bouncy) {
+                                withAnimation {
                                     proxy.scrollTo(t, anchor: .center)
                                 }
                             }

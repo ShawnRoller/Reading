@@ -21,6 +21,7 @@
 		1F08EDB42B8EC832000F91C5 /* FocusVerticalScrollingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F08EDB32B8EC832000F91C5 /* FocusVerticalScrollingText.swift */; };
 		1F08EDB52B8EC832000F91C5 /* FocusVerticalScrollingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F08EDB32B8EC832000F91C5 /* FocusVerticalScrollingText.swift */; };
 		1F08EDB82B8ED8AA000F91C5 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = 1F08EDB72B8ED8AA000F91C5 /* SwiftUIIntrospect */; };
+		1F4F923A2B901DC10054B7F7 /* PagerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F92392B901DC10054B7F7 /* PagerText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1F08EDAD2B8EC250000F91C5 /* StraightText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StraightText.swift; sourceTree = "<group>"; };
 		1F08EDB02B8EC284000F91C5 /* VerticalScrollingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalScrollingText.swift; sourceTree = "<group>"; };
 		1F08EDB32B8EC832000F91C5 /* FocusVerticalScrollingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusVerticalScrollingText.swift; sourceTree = "<group>"; };
+		1F4F92392B901DC10054B7F7 /* PagerText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				1F08EDAD2B8EC250000F91C5 /* StraightText.swift */,
 				1F08EDB02B8EC284000F91C5 /* VerticalScrollingText.swift */,
 				1F08EDB32B8EC832000F91C5 /* FocusVerticalScrollingText.swift */,
+				1F4F92392B901DC10054B7F7 /* PagerText.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				1F08EDAA2B8EC0E1000F91C5 /* TestAssets.swift in Sources */,
 				1F08ED8D2B8EBF76000F91C5 /* ReadingApp.swift in Sources */,
 				1F08EDB12B8EC284000F91C5 /* VerticalScrollingText.swift in Sources */,
+				1F4F923A2B901DC10054B7F7 /* PagerText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

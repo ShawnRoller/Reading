@@ -13,6 +13,7 @@ enum TextType {
     case Straight
     case VerticalScrolling
     case FocusVerticalScrolling
+    case Paging
 }
 
 struct ContentView: View {
@@ -29,6 +30,8 @@ struct ContentView: View {
                         VerticalScrollingText(text: text)
                     case .FocusVerticalScrolling:
                         FocusVerticalScrollingText(text: text)
+                    case .Paging:
+                        PagerText(text: text)
                 }
             }
         }
@@ -50,6 +53,12 @@ struct ContentView: View {
                 textType = .FocusVerticalScrolling
             } label: {
                 Label("Straight", systemImage: "rectangle.and.text.magnifyingglass")
+                    .labelStyle(.iconOnly)
+            }
+            Button {
+                textType = .Paging
+            } label: {
+                Label("Paging", systemImage: "book.pages")
                     .labelStyle(.iconOnly)
             }
         }
